@@ -1,0 +1,129 @@
+{
+  "before": {
+    "test": {
+      "samples": 10900,
+      "accuracy": 0.9809174311926605,
+      "evaluated_languages": 109,
+      "missing_languages": [],
+      "macro_f1": 0.9807642863348479,
+      "icelandic": {
+        "precision": 0.970873786407767,
+        "recall": 1.0,
+        "f1-score": 0.9852216748768473,
+        "support": 100.0
+      },
+      "seconds": 33.093399917008355
+    },
+    "short_text": {
+      "samples": 10900,
+      "accuracy": 0.9361467889908257,
+      "evaluated_languages": 109,
+      "missing_languages": [],
+      "macro_f1": 0.935316843151652,
+      "icelandic": {
+        "precision": 0.7982456140350878,
+        "recall": 0.91,
+        "f1-score": 0.8504672897196262,
+        "support": 100.0
+      },
+      "seconds": 11.802368333999766
+    }
+  },
+  "after": {
+    "validation_history": [
+      {
+        "samples": 4750,
+        "accuracy": 0.9149473684210526,
+        "evaluated_languages": 108,
+        "missing_languages": [
+          "hat"
+        ],
+        "macro_f1": 0.918973481895985,
+        "icelandic": {
+          "precision": 0.9782608695652174,
+          "recall": 0.9183673469387755,
+          "f1-score": 0.9473684210526315,
+          "support": 49.0
+        },
+        "seconds": 15.75753054098459
+      }
+    ],
+    "test": {
+      "samples": 10900,
+      "accuracy": 0.9815596330275229,
+      "evaluated_languages": 109,
+      "missing_languages": [],
+      "macro_f1": 0.9806289680647796,
+      "icelandic": {
+        "precision": 0.9615384615384616,
+        "recall": 1.0,
+        "f1-score": 0.9803921568627451,
+        "support": 100.0
+      },
+      "seconds": 32.49362262498471
+    },
+    "short_text": {
+      "samples": 10900,
+      "accuracy": 0.9397247706422018,
+      "evaluated_languages": 109,
+      "missing_languages": [],
+      "macro_f1": 0.9388434618108867,
+      "icelandic": {
+        "precision": 0.8055555555555556,
+        "recall": 0.87,
+        "f1-score": 0.8365384615384616,
+        "support": 100.0
+      },
+      "seconds": 11.525531874998705
+    },
+    "training_and_validation_seconds": 454.54614600000787,
+    "total_seconds": 498.65915849999874,
+    "limitations": [
+      "未验证实际业务效果",
+      "未做近重复文档聚类",
+      "40字符截断为派生测试，非独立真实短文本集",
+      "未校准置信度，未验证未知语言和混合语言拒识",
+      "测试文本可能出现在基座预训练语料中"
+    ]
+  },
+  "before_short_clean": {
+    "samples": 10840,
+    "accuracy": 0.9357933579335793,
+    "macro_f1": 0.935316843151652,
+    "icelandic": {
+      "precision": 0.7982456140350878,
+      "recall": 0.91,
+      "f1-score": 0.8504672897196262,
+      "support": 100.0
+    }
+  },
+  "after_short_clean": {
+    "samples": 10840,
+    "accuracy": 0.9393911439114391,
+    "macro_f1": 0.9388434618108867,
+    "icelandic": {
+      "precision": 0.8055555555555556,
+      "recall": 0.87,
+      "f1-score": 0.8365384615384616,
+      "support": 100.0
+    }
+  },
+  "paired_changes": {
+    "unchanged": 10797,
+    "regressed": 48,
+    "fixed": 55
+  },
+  "test_languages": 109,
+  "test_samples_per_language": 100,
+  "short_exclusions": 60,
+  "training_samples": 57614,
+  "training_synthetic": 15667,
+  "removed": {
+    "script_mismatch": 1013,
+    "untranslated_parallel_copy": 320,
+    "forum_time_template": 6,
+    "derivative_of_removed_parent": 722,
+    "validation_script_mismatch": 183,
+    "validation_untranslated_parallel_copy": 67
+  }
+}

@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+data/
+models/
+runs/
+.DS_Store
+.env
+.env.*
+*.log
+*.partial
+*.pyc
+# 本机报告镜像；公开报告位于 reports/
+baseline_evaluation_report.md
+local_evaluation_report.md

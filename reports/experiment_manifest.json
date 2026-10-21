@@ -1,0 +1,888 @@
+{
+  "status": "complete",
+  "base_revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+  "parent_adapter_sha256": "40b014ec8999e0eb3f135e22e6e9753964229db6480d84e62bbaa02fc539a9b7",
+  "adapter_sha256": "79a09baf5bc98ccea712fa5da79359fa55786edec6693bacd80333c3901b253f",
+  "input_files_sha256": {
+    "train": "3248b65b4073a55d588919645edfad66372a4f39ae7577d5b73c2d1aff79ccb6",
+    "validation": "2e38cdc66652c91af4e309f8f873a8cc9c7de0b59576fb083464aaa4db262cb9",
+    "test": "647ca595778540907c74127862a2f4767ca3ba3d273f004a905d105691a55f15"
+  },
+  "test_content_labels_identical_before_after": true,
+  "trained_epochs": 1,
+  "test_sources": [
+    {
+      "label": "afr",
+      "dataset": "mteb/flores",
+      "variant": "afr_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "amh",
+      "dataset": "mteb/flores",
+      "variant": "amh_Ethi",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ara",
+      "dataset": "mteb/flores",
+      "variant": "arb_Arab",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "asm",
+      "dataset": "mteb/flores",
+      "variant": "asm_Beng",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "aze",
+      "dataset": "mteb/flores",
+      "variant": "azj_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "bel",
+      "dataset": "mteb/flores",
+      "variant": "bel_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ben",
+      "dataset": "mteb/flores",
+      "variant": "ben_Beng",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "bod",
+      "dataset": "mteb/flores",
+      "variant": "bod_Tibt",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "bos",
+      "dataset": "mteb/flores",
+      "variant": "bos_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "bre",
+      "dataset": "UD_Breton-KEB",
+      "variant": "Latin script",
+      "revision": "639600f9b15a5e2e15f310b12e4dbe81c40fa74b",
+      "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Breton-KEB/639600f9b15a5e2e15f310b12e4dbe81c40fa74b/br_keb-ud-test.conllu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "bul",
+      "dataset": "mteb/flores",
+      "variant": "bul_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "cat",
+      "dataset": "mteb/flores",
+      "variant": "cat_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ceb",
+      "dataset": "mteb/flores",
+      "variant": "ceb_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ces",
+      "dataset": "mteb/flores",
+      "variant": "ces_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ckb",
+      "dataset": "mteb/flores",
+      "variant": "ckb_Arab",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "cym",
+      "dataset": "mteb/flores",
+      "variant": "cym_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "dan",
+      "dataset": "mteb/flores",
+      "variant": "dan_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "deu",
+      "dataset": "mteb/flores",
+      "variant": "deu_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ell",
+      "dataset": "mteb/flores",
+      "variant": "ell_Grek",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "eng",
+      "dataset": "mteb/flores",
+      "variant": "eng_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "epo",
+      "dataset": "mteb/flores",
+      "variant": "epo_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "est",
+      "dataset": "mteb/flores",
+      "variant": "est_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "eus",
+      "dataset": "mteb/flores",
+      "variant": "eus_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "fao",
+      "dataset": "mteb/flores",
+      "variant": "fao_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "fas",
+      "dataset": "mteb/flores",
+      "variant": "pes_Arab",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "fin",
+      "dataset": "mteb/flores",
+      "variant": "fin_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "fra",
+      "dataset": "mteb/flores",
+      "variant": "fra_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "fry",
+      "dataset": "UD_Frisian-Frysk",
+      "variant": "Latin script",
+      "revision": "ed48f6668df7a13568524f809cbc1cda8d613b4a",
+      "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Frisian-Frysk/ed48f6668df7a13568524f809cbc1cda8d613b4a/fy_frysk-ud-test.conllu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "gla",
+      "dataset": "mteb/flores",
+      "variant": "gla_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "gle",
+      "dataset": "mteb/flores",
+      "variant": "gle_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "glg",
+      "dataset": "mteb/flores",
+      "variant": "glg_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "guj",
+      "dataset": "mteb/flores",
+      "variant": "guj_Gujr",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "hat",
+      "dataset": "mteb/flores",
+      "variant": "hat_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "hau",
+      "dataset": "mteb/flores",
+      "variant": "hau_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "heb",
+      "dataset": "mteb/flores",
+      "variant": "heb_Hebr",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "hin",
+      "dataset": "mteb/flores",
+      "variant": "hin_Deva",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "hrv",
+      "dataset": "mteb/flores",
+      "variant": "hrv_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "hun",
+      "dataset": "mteb/flores",
+      "variant": "hun_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "hye",
+      "dataset": "mteb/flores",
+      "variant": "hye_Armn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ibo",
+      "dataset": "mteb/flores",
+      "variant": "ibo_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ind",
+      "dataset": "mteb/flores",
+      "variant": "ind_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "isl",
+      "dataset": "mteb/flores",
+      "variant": "isl_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ita",
+      "dataset": "mteb/flores",
+      "variant": "ita_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "jav",
+      "dataset": "mteb/flores",
+      "variant": "jav_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "jpn",
+      "dataset": "mteb/flores",
+      "variant": "jpn_Jpan",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "kan",
+      "dataset": "mteb/flores",
+      "variant": "kan_Knda",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "kat",
+      "dataset": "mteb/flores",
+      "variant": "kat_Geor",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "kaz",
+      "dataset": "mteb/flores",
+      "variant": "kaz_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "khm",
+      "dataset": "mteb/flores",
+      "variant": "khm_Khmr",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "kin",
+      "dataset": "mteb/flores",
+      "variant": "kin_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "kir",
+      "dataset": "mteb/flores",
+      "variant": "kir_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "kor",
+      "dataset": "mteb/flores",
+      "variant": "kor_Hang",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "kur",
+      "dataset": "mteb/flores",
+      "variant": "kmr_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "lao",
+      "dataset": "mteb/flores",
+      "variant": "lao_Laoo",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "lat",
+      "dataset": "UD_Latin-LLCT",
+      "variant": "Latin script",
+      "revision": "173cd1133e70f1a95a8608091792f91ebe001157",
+      "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Latin-LLCT/173cd1133e70f1a95a8608091792f91ebe001157/la_llct-ud-test.conllu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "lav",
+      "dataset": "mteb/flores",
+      "variant": "lvs_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "lit",
+      "dataset": "mteb/flores",
+      "variant": "lit_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ltz",
+      "dataset": "mteb/flores",
+      "variant": "ltz_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "mal",
+      "dataset": "mteb/flores",
+      "variant": "mal_Mlym",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "mar",
+      "dataset": "mteb/flores",
+      "variant": "mar_Deva",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "mkd",
+      "dataset": "mteb/flores",
+      "variant": "mkd_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "mlg",
+      "dataset": "mteb/flores",
+      "variant": "plt_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "mlt",
+      "dataset": "mteb/flores",
+      "variant": "mlt_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "mon",
+      "dataset": "mteb/flores",
+      "variant": "khk_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "mri",
+      "dataset": "mteb/flores",
+      "variant": "mri_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "msa",
+      "dataset": "mteb/flores",
+      "variant": "zsm_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "mya",
+      "dataset": "mteb/flores",
+      "variant": "mya_Mymr",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "nep",
+      "dataset": "mteb/flores",
+      "variant": "npi_Deva",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "nld",
+      "dataset": "mteb/flores",
+      "variant": "nld_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "nno",
+      "dataset": "mteb/flores",
+      "variant": "nno_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "nob",
+      "dataset": "mteb/flores",
+      "variant": "nob_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ori",
+      "dataset": "mteb/flores",
+      "variant": "ory_Orya",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "orm",
+      "dataset": "mteb/flores",
+      "variant": "gaz_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "pan",
+      "dataset": "mteb/flores",
+      "variant": "pan_Guru",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "pol",
+      "dataset": "mteb/flores",
+      "variant": "pol_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "por",
+      "dataset": "mteb/flores",
+      "variant": "por_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "pus",
+      "dataset": "mteb/flores",
+      "variant": "pbt_Arab",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ron",
+      "dataset": "mteb/flores",
+      "variant": "ron_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "rus",
+      "dataset": "mteb/flores",
+      "variant": "rus_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "san",
+      "dataset": "mteb/flores",
+      "variant": "san_Deva",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "sin",
+      "dataset": "mteb/flores",
+      "variant": "sin_Sinh",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "slk",
+      "dataset": "mteb/flores",
+      "variant": "slk_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "slv",
+      "dataset": "mteb/flores",
+      "variant": "slv_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "sna",
+      "dataset": "mteb/flores",
+      "variant": "sna_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "snd",
+      "dataset": "mteb/flores",
+      "variant": "snd_Arab",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "som",
+      "dataset": "mteb/flores",
+      "variant": "som_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "spa",
+      "dataset": "mteb/flores",
+      "variant": "spa_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "sqi",
+      "dataset": "mteb/flores",
+      "variant": "als_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "srp",
+      "dataset": "mteb/flores",
+      "variant": "srp_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "sun",
+      "dataset": "mteb/flores",
+      "variant": "sun_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "swa",
+      "dataset": "mteb/flores",
+      "variant": "swh_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "swe",
+      "dataset": "mteb/flores",
+      "variant": "swe_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "tam",
+      "dataset": "mteb/flores",
+      "variant": "tam_Taml",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "tat",
+      "dataset": "mteb/flores",
+      "variant": "tat_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "tel",
+      "dataset": "mteb/flores",
+      "variant": "tel_Telu",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "tgk",
+      "dataset": "mteb/flores",
+      "variant": "tgk_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "tgl",
+      "dataset": "mteb/flores",
+      "variant": "tgl_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "tha",
+      "dataset": "mteb/flores",
+      "variant": "tha_Thai",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "tuk",
+      "dataset": "mteb/flores",
+      "variant": "tuk_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "tur",
+      "dataset": "mteb/flores",
+      "variant": "tur_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "uig",
+      "dataset": "mteb/flores",
+      "variant": "uig_Arab",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "ukr",
+      "dataset": "mteb/flores",
+      "variant": "ukr_Cyrl",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "urd",
+      "dataset": "mteb/flores",
+      "variant": "urd_Arab",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "uzb",
+      "dataset": "mteb/flores",
+      "variant": "uzn_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "vie",
+      "dataset": "mteb/flores",
+      "variant": "vie_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "xho",
+      "dataset": "mteb/flores",
+      "variant": "xho_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "yid",
+      "dataset": "mteb/flores",
+      "variant": "ydd_Hebr",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "yor",
+      "dataset": "mteb/flores",
+      "variant": "yor_Latn",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "zho",
+      "dataset": "mteb/flores",
+      "variant": "zho_Hans,zho_Hant",
+      "revision": "69edd3336d102dd184dd531b57defac6c9c60c8f",
+      "url": "https://huggingface.co/datasets/mteb/flores/resolve/69edd3336d102dd184dd531b57defac6c9c60c8f/devtest.parquet",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "manual_validation": "see local run artifacts, excluded from git"
+}

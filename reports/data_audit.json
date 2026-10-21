@@ -1,0 +1,10 @@
+{
+  "full_input_overlap": {
+    "train/validation": 0,
+    "train/test": 0,
+    "validation/test": 0
+  },
+  "all_synthetic_parents_in_real_training": true,
+  "no_synthetic_evaluation": true,
+  "short_derived_input_overlap_count": 60
+}
