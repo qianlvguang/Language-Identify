@@ -39,7 +39,7 @@ uv pip install --python .venv/bin/python --index-url https://pypi.tuna.tsinghua.
 
 ## 从零复现
 
-先生成父适配器，再准备扩充与清洗数据。仓库不分发原始语料或权重。
+先生成父适配器，再准备扩充与清洗数据。仓库不分发原始语料；已训练权重可从下方 Release 下载。
 
 ```bash
 # 百科小样本基线：109 类、3 epoch
@@ -75,6 +75,26 @@ uv pip install --python .venv/bin/python --index-url https://pypi.tuna.tsinghua.
 
 审计见 [data_audit.json](reports/data_audit.json)，实验溯源见 [experiment_manifest.json](reports/experiment_manifest.json)。
 
+## 下载已训练权重
+
+[权重 Release v1.0.0](https://github.com/qianlvguang/Language-Identify/releases/tag/v1.0.0) 提供两版适配器，均包含分类头、分词器、109 类标签和推理配置，无需先训练。`expanded_lora_109` 是默认版；`clean_lora_109` 是本轮对照候选，冰岛语表现退步，详见报告。
+
+完成安装和基座下载后，在仓库根目录执行（需要 GitHub CLI）：
+
+```bash
+gh release download v1.0.0 --repo qianlvguang/Language-Identify --pattern '*.tar.gz' --pattern sha256sums.txt --pattern weights_manifest.json
+shasum -a 256 -c sha256sums.txt
+tar -xzf expanded_lora_109.tar.gz
+tar -xzf clean_lora_109.tar.gz
+.venv/bin/python scripts/predict.py 'Ég tala íslensku á hverjum degi.'
+```
+
+也可从 Release 页面手动下载。压缩包在 `runs/` 下还原所需目录；若已有同名训练产物，请在全新克隆中解压，避免覆盖本机记录。
+
+发布的是约 3.7MB 的 LoRA 权重（每版），包含训练后的完整分类头；它们依赖上述固定版本的 XLM-R 基座，不是独立全量模型。Release 的 `weights_manifest.json` 记录基座版本、适配器及压缩包 SHA-256；分发配置移除了本机绝对路径，权重字节保持原样。两版都直接从同一基座加载，无需串联父适配器。
+
+模型沿用基座及训练语料相关条款；项目 MIT 代码许可证不额外授予训练语料权利。本项目未完成全部 OPUS 子语料的商业使用条款核验。
+
 ## 推理
 
 ```bash
@@ -106,4 +126,4 @@ GitHub Actions 只检查语法与发布产物，不等于运行了 GPU 训练。
 - [UD Latin LLCT](https://github.com/UniversalDependencies/UD_Latin-LLCT)、[UD Breton KEB](https://github.com/UniversalDependencies/UD_Breton-KEB)、[UD Frisian Frysk](https://github.com/UniversalDependencies/UD_Frisian-Frysk/tree/dev)：本次采用的测试文本为 CC BY-SA 4.0。
 - [FastText](https://fasttext.cc/docs/en/language-identification.html)：仅辅助训练数据质量筛查。
 
-仅发布代码、依赖、中文报告、来源和聚合数值。不提交原始语料、缓存、虚拟环境、模型权重或本机私有配置。
+Git 仓库发布代码、依赖、中文报告、来源和聚合数值；已训练适配器与分类头以 GitHub Release 附件发布。不提交原始语料、缓存、虚拟环境或本机私有配置。
