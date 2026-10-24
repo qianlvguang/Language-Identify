@@ -1,0 +1,38 @@
+{
+  "level1_standard": {
+    "level": "level1_standard",
+    "description": "标准原文基准",
+    "total_samples": 6400,
+    "accuracy": 0.99078125,
+    "macro_f1": 0.9908535715392933,
+    "core_38_macro_f1": 0.8945097036251094,
+    "latency_per_sample_ms": 4.095503509217906
+  },
+  "level2_short": {
+    "level": "level2_short",
+    "description": "短句测试 (<=35字符)",
+    "total_samples": 6400,
+    "accuracy": 0.8603125,
+    "macro_f1": 0.8614810927963823,
+    "core_38_macro_f1": 0.5148542039633955,
+    "latency_per_sample_ms": 1.0522155339060646
+  },
+  "level3_light_ocr": {
+    "level": "level3_light_ocr",
+    "description": "轻度 OCR 错字",
+    "total_samples": 6400,
+    "accuracy": 0.98796875,
+    "macro_f1": 0.9880255966889561,
+    "core_38_macro_f1": 0.8706347678421114,
+    "latency_per_sample_ms": 4.074828645781281
+  },
+  "level4_heavy_ocr": {
+    "level": "level4_heavy_ocr",
+    "description": "重度 OCR 乱码与规格参数",
+    "total_samples": 6400,
+    "accuracy": 0.98515625,
+    "macro_f1": 0.9852313087788236,
+    "core_38_macro_f1": 0.809115070026485,
+    "latency_per_sample_ms": 4.090063899686811
+  }
+}
